@@ -5,11 +5,12 @@ export const Container = styled.div`
 	align-items:center;
 	justify-content: center ;
 	
-img{
-	width: 0.8125rem;
-	height: 0.8125rem;
-}
- select{
+	img{
+		width: 0.8125rem;
+		height: 0.8125rem;
+	}
+	select{
+	 cursor: pointer;
 	background:none ;
 	border:none ;
 	outline:none ;

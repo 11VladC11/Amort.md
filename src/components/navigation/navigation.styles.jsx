@@ -1,4 +1,9 @@
 import styled from "styled-components";
+export const NavigationWrapper = styled.div`
+	width: 100%;
+	position:fixed ;
+	z-index:1000 ;
+`
 export const NavigationContainer = styled.div`
 	width: 77rem ;
 	margin: 0.375rem auto 0 auto;

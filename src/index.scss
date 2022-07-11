@@ -5,12 +5,13 @@ body {
   margin: 0;
 	background: linear-gradient(180deg, #050F1E 0%, #050B1E 100%);
 	font-family: 'Rubik', sans-serif;
+	width:100%;
+	overflow-x:hidden;
+	color: #ffffff;
+	
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 
 .lock_width{
 	width: 77rem;
