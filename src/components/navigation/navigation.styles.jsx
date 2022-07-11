@@ -80,6 +80,7 @@ img{
 	position:absolute ;
 	top:50% ;
 	left: 50%;
+	width:1.121875rem ;
 	transform:translate(-60%,-50%) ;
 }
 
@@ -87,7 +88,7 @@ img{
 			background: linear-gradient(180deg, #61FD7D 0%, #2BB826 100%);
 			img{
 					transform:translate(-50%,-50%) ;
-
+				width:1.371875rem ;
 			}
 	}	
 

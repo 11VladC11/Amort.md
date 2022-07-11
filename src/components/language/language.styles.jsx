@@ -15,11 +15,13 @@ img{
 	outline:none ;
 	color:#ffffff ;
 	font-weight:500 ;
+	font-size:1rem ;
 }
  option{
 	background-color: #050B1E ;
 	position	:absolute ;
 	border: 1px solid #050B1E ;
+	font-size:1rem ;
 }
 `
 
