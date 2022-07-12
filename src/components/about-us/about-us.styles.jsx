@@ -57,11 +57,15 @@ export const AboutUsContacts = styled.div`
 		font-size:1rem ;
 		font-weight:500 ;
 		outline:none ;
+		background-color:transparent;
 		font-family: 'Rubik', sans-serif;
+		transition: all 0.3s ease;
 		img{
 			width: 1.125rem;
 		}
 &:hover{
+		transition: all 0.3s ease;
+
 	background-color:#DCDEFA ;
 }
 	}

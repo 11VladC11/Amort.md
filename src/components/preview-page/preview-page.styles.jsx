@@ -71,6 +71,7 @@ export const Trust = styled.div`
 	`
 export const PreviewPageIllustration = styled.div`
 	padding-top:9.5rem ;
+
 	.background{
 		top: 2.5rem;
 		position: absolute ;
