@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const BaseButton = styled.button`
 display: flex;
+	font-family: 'Rubik', sans-serif;
+
 flex-direction: row;
 justify-content: center;
 align-items: center;

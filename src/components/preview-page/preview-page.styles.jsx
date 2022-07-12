@@ -35,7 +35,7 @@ export const Telephone = styled.div`
 margin-bottom:-0.5rem ;
 	margin-left:1.5625rem ;
 	padding-bottom:0.5rem ;
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 0.125rem solid #ffffff;
 	border-radius:1px ;
 	img{
 		width:1.029375rem ;
@@ -75,11 +75,11 @@ export const PreviewPageIllustration = styled.div`
 		top: 2.5rem;
 		position: absolute ;
 		z-index:-1 ;
-		width: 760px;
-height: 637.43px;
-border-radius:333rem ;
+		width: 47.5rem;
+		height: 39.839375rem;
+		border-radius:333rem ;
 		background: linear-gradient(180deg, #CFA717 0%, #CF1717 26.56%, #3C17CF 68.23%, #1761CF 100%);
-		filter: blur(150px);
+		filter: blur(9.375rem);
 
 	}
 	
