@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PreviewPageContainer = styled.div`
 	width: 98.5rem;
-	height:45rem ;
+	height:45rem ; 
 	margin:0 0 0 auto ;
 	position: relative;
 	display:flex ;
