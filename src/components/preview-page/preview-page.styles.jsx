@@ -1,9 +1,11 @@
 import styled from "styled-components";
-
+export const PreviewPageWrapper = styled.div`
+position:relative ;
+`
 export const PreviewPageContainer = styled.div`
-	width: 98.5rem;
+	width: 77rem ;
+	margin:0 auto ;
 	height:45rem ; 
-	margin:0 0 0 auto ;
 	position: relative;
 	display:flex ;
 	align-items: center ;
@@ -81,7 +83,10 @@ export const PreviewPageIllustration = styled.div`
 		border-radius:333rem ;
 		background: linear-gradient(180deg, #CFA717 0%, #CF1717 26.56%, #3C17CF 68.23%, #1761CF 100%);
 		filter: blur(9.375rem);
-
 	}
 	
+`
+
+export const IllustrationMinus = styled.div`
+margin-right:-11rem ;
 `

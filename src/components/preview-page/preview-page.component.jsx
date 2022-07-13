@@ -1,11 +1,12 @@
 import Button from "../button/button.component";
-import { Car, InfoContacts, InfoText, PreviewPageContainer, PreviewPageIllustration, PreviewPageInfo, Smoke , Telephone, Trust} from "./preview-page.styles";
+import { Car, IllustrationMinus, InfoContacts, InfoText, PreviewPageContainer, PreviewPageIllustration, PreviewPageInfo, PreviewPageWrapper, Smoke , Telephone, Trust} from "./preview-page.styles";
 import telefon from '../../assets/icons/phone.svg';
 import smoke from '../../assets/img/smoke-min.png';
 import car from '../../assets/img/car-min.png';
 import trust from '../../assets/img/trust-min.png';
 const PreviewPage =()=>{
 	return(
+		<PreviewPageWrapper>
 		<PreviewPageContainer>
 			<PreviewPageInfo>
 				<InfoText>
@@ -27,17 +28,20 @@ const PreviewPage =()=>{
 
 			<PreviewPageIllustration>
 			<div className="background"></div>
-			<Car>
-				<img src={car} alt="" />
-			</Car>
-			<Trust>
-				<img src={trust} alt="" />
-			</Trust>
+			<IllustrationMinus>
+				<Car>
+					<img src={car} alt="" />
+				</Car>
+				<Trust>
+					<img src={trust} alt="" />
+				</Trust>
+			</IllustrationMinus>
 			</PreviewPageIllustration>
+			</PreviewPageContainer>	
 			<Smoke>
 			<img src={smoke} alt="smoke" />
 			</Smoke>
-		</PreviewPageContainer>		
+		</PreviewPageWrapper>	
 	)
 }
 
