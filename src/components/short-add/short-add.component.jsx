@@ -11,8 +11,9 @@ const ShortAdd =()=>{
 						<span>Запишитесь на диагностику амортизаторов или позвоните по номеру ниже</span>
 					</AddInfo>
 					<AddContacts>
-						
-						<ButtonViolet children='Записаться'/>
+						<a href="tel:+37367309001">
+							<ButtonViolet children='Записаться'/>
+						</a>
 						<TelephoneAdd>
 					<a href="tel:+37367309001">
 						<img src={telefon} alt="" /> 

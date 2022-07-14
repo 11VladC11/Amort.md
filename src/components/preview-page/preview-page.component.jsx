@@ -4,9 +4,10 @@ import telefon from '../../assets/icons/phone.svg';
 import smoke from '../../assets/img/smoke-min.png';
 import car from '../../assets/img/car-min.png';
 import trust from '../../assets/img/trust-min.png';
+import { Link } from "react-scroll";
 const PreviewPage =()=>{
 	return(
-		<PreviewPageWrapper>
+		<PreviewPageWrapper id="home">
 		<PreviewPageContainer>
 			<PreviewPageInfo>
 				<InfoText>
@@ -14,9 +15,10 @@ const PreviewPage =()=>{
 					<span>Квалифицированные услуги по диагностике и ремонту амортизаторов</span>
 				</InfoText>
 				<InfoContacts>				
-					<a href="tel:+37367309001">
+					<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
 						<Button children='Узнать стоимость'/>
-					</a> 
+					</Link>
+					 
 					<Telephone>
 					<a href="tel:+37367309001">
 						<img src={telefon} alt="" /> 
@@ -32,9 +34,11 @@ const PreviewPage =()=>{
 				<Car>
 					<img src={car} alt="" />
 				</Car>
-				<Trust>
-					<img src={trust} alt="" />
-				</Trust>
+				<Link to="why-us" spy={true} smooth={true} offset={-150} duration={500}>
+					<Trust>
+						<img src={trust} alt="" />
+					</Trust>
+				</Link>
 			</IllustrationMinus>
 			</PreviewPageIllustration>
 			</PreviewPageContainer>	

@@ -4,19 +4,22 @@ import Language from '../language/language.component';
 import phone from '../../assets/icons/phone.svg'
 import telegram from '../../assets/icons/telegram.svg';
 import whatsap from '../../assets/icons/whatsapp.svg';
+import { Link } from 'react-scroll';
 const Navigation =()=>{
 	return(
 		<NavigationWrapper>
 			<NavigationContainer>
-				<LogoImg src={MainLogo} alt='main-logo' />
+				<Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+					<LogoImg src={MainLogo} alt='main-logo' />
+				</Link>
 				<NavigationLinksContainer>
 					<NavigationLinks>
 						<ul>
 							<li><Language/></li>
-							<li><a href="#why-us">Почему мы?</a></li>
-							<li><a href="#about-us">О компании</a></li>
-							<li><a href="#products">Услуги</a></li>
-							<li><a href="#contacts">Контакты</a></li>
+							<li><Link to="why-us" spy={true} smooth={true} offset={-150} duration={500}>Почему мы?</Link></li>
+							<li><Link to="about-us" spy={true} smooth={true} offset={-150} duration={500}>О компании</Link></li>
+							<li><Link to="products" spy={true} smooth={true} offset={-150} duration={500}>Услуги</Link></li>
+							<li><Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>Контакты</Link></li>
 						</ul>
 					</NavigationLinks>
 					<NavigationContacts>

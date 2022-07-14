@@ -11,12 +11,12 @@ import secondReview from '../../assets/img/second-review-min.jpg'
 import thirdReview from '../../assets/img/third-review-min.jpg'
 import amortizatoare from '../../assets/img/amortizatore-min.png'
 import Button from "../button/button.component";
-
+import { Link } from "react-scroll";
 const WhyUs =()=>{
 	const reviews = 'https://www.google.com/maps/place/Ремонт+Амортизаторов/@46.9827624,28.8958451,16z/data=!4m7!3m6!1s0x0:0xd667d7f83ea69793!8m2!3d46.983099!4d28.8975976!9m1!1b1'
 return(
 	<WhyUsWrapper>
-		<WhyUsContainer>
+		<WhyUsContainer id="why-us">
 			<WInfo>
 				<ul>
 					<li>
@@ -47,9 +47,9 @@ return(
 						<span className="text">Приемлемые цены</span>
 					</li>
 					<li>
-						<a href="tel:+37367309001">
-						<Button children='Узнать стоимость'/>
-						</a>
+						<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
+							<Button children='Узнать стоимость'/>
+						</Link>
 					</li>
 				</ul>
 				<Amortizatoare>
