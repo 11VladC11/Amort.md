@@ -13,6 +13,11 @@ width: 100%;
 		margin-block-start: 0rem;
     margin-block-end: 0rem;
 	}
+	/* .change{
+		height:2.625rem ;
+		width: 100%;
+		margin:1rem 0 ;
+	} */
 	
 	
 	`
@@ -65,6 +70,7 @@ label{
 `
 
 export const SuccessSubmit = styled.div`
+transition:all 0.3s ease ;
 margin:1rem 0 ;
 background: #2FA62D;
 border-radius: 0.75rem;

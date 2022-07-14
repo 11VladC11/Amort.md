@@ -1,8 +1,14 @@
+import { useState } from "react";
 import emailjs from "emailjs-com";
 import { FormButton, FormContainer, FormInput, FormWrapper, InputSection, PersonalInformation, SubmitButton, SuccessSubmit, TextArea } from "./form.styles";
 import close from '../../assets/icons/close.svg';
 import substract from '../../assets/icons/subtract.svg'
 const Form =()=>{
+	const [isActive, setIsActive] = useState(false);
+	const handleClick =()=>{
+		setIsActive(false)
+	};
+
 	function sendEmail(e){
 		 e.preventDefault();
 
@@ -13,6 +19,7 @@ const Form =()=>{
           console.log(error.text);
       });
 		e.target.reset()
+		setIsActive(current => !current)
 	}
 
 	return(
@@ -40,13 +47,30 @@ const Form =()=>{
 					<TextArea id="problem" name="problem" required type='textarea' autoComplete="off" placeholder="Например: У меня взорвались передние амортизаторы, а ещё они стучат, и машина не держит дорогу. Стуки начались со вчерашнего дня...">
 					</TextArea>
 				</InputSection>
-				<SuccessSubmit>
-					<div>
-					<img src={substract} alt="" />
-					<span>Ваша заявка была успешна отправлена! Ожидайте ответа.</span>
-					</div>				
-					<img src={close} alt="" />
-				</SuccessSubmit>
+				<div style={
+						{
+							cursor: isActive ? '' :'default',
+						}
+						}>
+					<SuccessSubmit style={
+						{
+							opacity: isActive ? '1' :'0',
+						}
+						}>
+						<div>
+						<img src={substract} alt="" />
+						<span>Ваша заявка была успешна отправлена! Ожидайте ответа.</span>
+						</div>				
+						<img src={close} alt="" onClick={handleClick}
+						style={
+						{
+							cursor: isActive ? 'pointer' :'default',
+						}
+						}/>
+						
+						
+					</SuccessSubmit>
+				</div>
 				<SubmitButton>
 				<FormButton children='Отправить'/>
 				</SubmitButton>
