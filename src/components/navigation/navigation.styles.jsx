@@ -3,6 +3,9 @@ export const NavigationWrapper = styled.div`
 	width: 100%;
 	position:fixed ;
 	z-index:1000 ;
+	@media screen and (max-width:1000px){
+		display: none ;
+	}
 `
 
 

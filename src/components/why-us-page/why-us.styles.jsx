@@ -5,12 +5,21 @@ width:100% ;
 background: #DBDCFA;
 color:#091427 ;
 padding-top:5.625rem ;
+@media screen and (max-width:1000px){
+display	: none;
+}
 `
 export const WhyUsContainer = styled.div`
 	width: 77rem ;
 	height: 45rem;
 	margin:0 auto;
 	display:flex ;
+	@media screen and (max-width:1000px){
+		flex-direction:column ;
+		width: 100% ;
+		margin:0;
+		height:auto ; 
+	}
 	h2{
 		font-size:1.5rem ;
 		font-weight:500 ;
@@ -56,6 +65,9 @@ export const WReviews = styled.div`
 	width: 50%;
 	display: flex;
 	justify-content:flex-end ;
+	@media screen and (max-width:1000px){
+		flex-direction:column ;
+	}
 
 `
 export const Amortizatoare = styled.div`

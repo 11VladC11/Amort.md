@@ -6,6 +6,9 @@ position:relative ;
 	height: 45rem;
 	background: #E5EFFE;
 	color: #091427;
+	@media screen and (max-width:1000px){
+display	: none;
+}
 `
 
 export const AboutUsContainer = styled.div`
@@ -15,6 +18,12 @@ height: 100%;
 	margin:0 auto ;
 	display:flex ;
 	align-items: center;
+	@media screen and (max-width:1000px){
+		flex-direction:column ;
+		width: 100% ;
+		margin:0;
+		height:auto ; 
+	}
 `
 
 export const AboutUsImg = styled.div`
@@ -45,6 +54,9 @@ export const AboutUsContacts = styled.div`
 	display: flex;
 	align-items:center ;
 	gap:1rem;
+	@media screen and (max-width:1000px){
+		flex-direction:column ;
+	}
 	.purpleBtn{
 		display: flex;
 		align-items: center;

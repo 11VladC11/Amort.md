@@ -31,8 +31,8 @@ const PreviewPage =({props})=>{
 			</PreviewPageInfo>
 
 			<PreviewPageIllustration>
-			<div className="background"></div>
 			<IllustrationMinus>
+			<div className="background"></div>
 				<Car>
 					<img src={car} alt="" />
 				</Car>

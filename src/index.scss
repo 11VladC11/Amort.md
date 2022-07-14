@@ -9,6 +9,10 @@
 			font-size: 15px;
 		
 		}
+		@media (min-width: 0px) and (max-width: 1000px) {
+			font-size: 14px;
+	
+		}
 }
 ::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -32,7 +36,9 @@ body {
 	width:100%;
 	overflow-x:hidden;
 	color: #ffffff;
-	
+	@media screen and (max-width:1000px) {
+		padding:1.714285rem;
+	}
 }
 
 

@@ -24,6 +24,13 @@ box-shadow: 0px 0.5625rem 0.875rem rgba(20, 52, 167, 0.25);
 transition:all 0.3s ease ;
 box-shadow:none ;
 }
+	@media screen and (max-width:1000px){
+	width: 100%;
+padding: 1.25rem 1.5rem;
+	width: 286px;
+height: 46px;
+	
+	}	
 
 
 `
