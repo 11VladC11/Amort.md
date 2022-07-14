@@ -25,6 +25,10 @@ h1{
 		color: #E52B2B;
 	}
 }
+span.intro{
+	display:block ;
+		width: 28.125rem;
+}
 `
 
 export const InfoContacts = styled.div`
@@ -53,7 +57,7 @@ export const Smoke = styled.div`
 z-index:-1 ;
 	position:absolute ;
 	right: 0;
-	bottom: 0;
+	bottom: -0.25rem;
 	img{
 		width: 29.25rem;
 	}

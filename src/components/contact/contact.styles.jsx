@@ -17,6 +17,9 @@ ul{
 			gap:0.65rem;
 			margin-bottom:1.1875rem ;
 			font-size:1rem ;
+			img{
+				width: 1rem;
+			}
 		 }
 }
 h2{

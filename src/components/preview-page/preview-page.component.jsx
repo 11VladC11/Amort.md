@@ -14,7 +14,7 @@ const PreviewPage =({props})=>{
 			<PreviewPageInfo>
 				<InfoText>
 					<h1>{props[1]}<br/><span>{props[2]}</span></h1>
-					<span>{props[3]}</span>
+					<span className="intro">{props[3]}</span>
 				</InfoText>
 				<InfoContacts>				
 					<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>

@@ -1,6 +1,7 @@
 export const languageChangerObject ={
 	'russian':{
 		'navigation':{
+			0:'диагностика и ремонт амортизаторов',
 			1:'Почему мы?',
 			2:'О компании',
 			3:'Услуги',
@@ -62,6 +63,7 @@ export const languageChangerObject ={
 	},
 	'romanian':{
 		'navigation':{
+			0:'diagnost / remontarea amortizoarelor',
 			1:'De ce noi?',
 			2:'Despre companie',
 			3:'Servicii',
@@ -69,7 +71,7 @@ export const languageChangerObject ={
 		},
 		'previewPage':{
 			1:'Nu mai loviți drumul!',
-			2:'Reparați amortizoarele',
+			2:'Reparați amortizoarele!',
 			3:'Servicii calificate pentru diagnosticarea si repararea amortizoarelor',
 			4:'Aflați prețurile',
 			5:'service auto de Încredere cu locație în Chișinău!'

@@ -113,19 +113,22 @@ a{
 		display:flex ;
 		align-items:center ;
 		justify-content:space-between ;
-padding: 10px 20px;
+padding: 0.625rem 1.25rem;
 border:none ;
 outline:none ;
 color:#ffffff ;
 font-size:1rem ;
-width: 240px;
-height: 43px;
+width: 15rem;
+height: 2.6875rem;
 cursor:pointer ;
 	font-family: 'Rubik', sans-serif;
 
 font-weight:500 ;
 background: linear-gradient(96.18deg, #2BB514 1.56%, #1AB502 86.86%);
-border-radius: 12px;
+border-radius: 0.75rem;
+img{
+	width: 1.125rem;
+}
 	}
 }
 `

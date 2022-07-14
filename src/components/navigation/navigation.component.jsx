@@ -10,8 +10,9 @@ const Navigation =({props})=>{
 	return(
 		<NavigationWrapper>
 			<NavigationContainer>
-				<Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+				<Link className='logoContainer' to="home" spy={true} smooth={true} offset={0} duration={500}>
 					<LogoImg src={MainLogo} alt='main-logo' />
+					<span className='logoAbsoluteText'>{props[0]}</span>
 				</Link>
 				<NavigationLinksContainer>
 					<NavigationLinks>

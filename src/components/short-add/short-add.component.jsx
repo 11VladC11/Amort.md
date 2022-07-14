@@ -1,6 +1,7 @@
 import { AddContainer, ButtonViolet, AddInfo,AddContacts, ShortAddContainer, ShortAddWrapper, BackgroundImage, TelephoneAdd } from "./short-add.styles";
 import carDoctor from '../../assets/img/car-doctor-min.jpg';
 import telefon from '../../assets/icons/phone.svg';
+import { Link } from "react-scroll";
 const ShortAdd =({props})=>{
 	return(
 		<ShortAddWrapper>
@@ -11,9 +12,9 @@ const ShortAdd =({props})=>{
 						<span>{props[2]}</span>
 					</AddInfo>
 					<AddContacts>
-						<a href="tel:+37367309001">
+						<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
 							<ButtonViolet children={props[3]}/>
-						</a>
+						</Link>
 						<TelephoneAdd>
 					<a href="tel:+37367309001">
 						<img src={telefon} alt="" /> 

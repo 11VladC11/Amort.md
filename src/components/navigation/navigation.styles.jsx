@@ -4,11 +4,29 @@ export const NavigationWrapper = styled.div`
 	position:fixed ;
 	z-index:1000 ;
 `
+
+
 export const NavigationContainer = styled.div`
 	width: 77rem ;
 	margin: 0.375rem auto 0 auto;
 	display:flex ;
 	align-items:center ;
+	.logoContainer{
+		position:relative ;
+	}
+	.logoAbsoluteText{
+		position: absolute ;
+		bottom:0.625rem ;
+		left:50% ;
+		font-weight:500 ;
+		letter-spacing: 0.03rem;
+		text-transform: uppercase;
+		line-height: 1.375rem;
+		
+		font-size:0.5625rem ;
+		transform:translateX(-50%) ;
+		width: 13.75rem;
+	}
 
 `
 
@@ -41,6 +59,16 @@ ul{
 		&:first-child{
 			margin-left: 0rem;
 			padding-top: 0.1rem;
+		}
+		a{
+
+			opacity: 1;
+			transition:all 0.3s ease ;
+			&:hover{
+			transition:all 0.3s ease ;
+
+				opacity:0.7 ;
+			}
 		}
 	}
 }

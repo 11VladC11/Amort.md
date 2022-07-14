@@ -49,9 +49,9 @@ export const AboutUsContacts = styled.div`
 		display: flex;
 		align-items: center;
 		padding: 1.25rem 1.5rem;
-		gap: 10px;
-		height: 51px;
-		border-radius: 12px;
+		gap: 0.625rem;
+		height: 3.1875rem;
+		border-radius: 0.75rem;
 		color:#174BCF ;
 		border:none;
 		font-size:1rem ;
@@ -72,7 +72,8 @@ export const AboutUsContacts = styled.div`
 `
 export const SmokeEffect = styled.div`
 	position:absolute ;
-	bottom:0;
+	bottom: -0.25rem;
+
 	left:0 ;
 	img{
 		width: 22.5rem;
