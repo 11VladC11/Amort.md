@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import { FormButton, FormContainer, FormInput, FormWrapper, InputSection, PersonalInformation, SubmitButton, SuccessSubmit, TextArea } from "./form.styles";
 import close from '../../assets/icons/close.svg';
 import substract from '../../assets/icons/subtract.svg'
-const Form =()=>{
+const Form =({props})=>{
 	const [isActive, setIsActive] = useState(false);
 	const handleClick =()=>{
 		setIsActive(false)
@@ -25,26 +25,26 @@ const Form =()=>{
 	return(
 		<FormWrapper>
 			<FormContainer onSubmit={sendEmail}>
-				<h2>Оставьте заявку на бесплатную консультацию</h2>
+				<h2>{props[1]}</h2>
 				<PersonalInformation>
 					<InputSection className="jumi">
-						<label htmlFor="phone">Ваш номер телефона*</label>
+						<label htmlFor="phone">{props[2]}</label>
 						<FormInput id='phone' name="phone" type='number' placeholder="068 584 828" autoComplete="off" required/>
 					</InputSection>
 					
 					<InputSection className="jumi">
-						<label htmlFor="name">Ваше имя</label>
-						<FormInput id='name' name='name' type='text' placeholder="Юрий..." autoComplete="off" required/>
+						<label htmlFor="name">{props[3]}</label>
+						<FormInput id='name' name='name' type='text' placeholder={props[4]} autoComplete="off" required/>
 					</InputSection>
 				</PersonalInformation>
 				<InputSection>
-					<label htmlFor="car-model">Укажите модель вашего авто</label>
-					<FormInput id="car-model" name="carModel" type='text' autoComplete="off" placeholder="Например: Ford Mustang 2018 года, полный привод" required/>
+					<label htmlFor="car-model">{props[5]}</label>
+					<FormInput id="car-model" name="carModel" type='text' autoComplete="off" placeholder={props[6]} required/>
 				</InputSection>
 				<InputSection>
 
-					<label htmlFor="problem">Расскажите нам о вашей проблеме</label>
-					<TextArea id="problem" name="problem" required type='textarea' autoComplete="off" placeholder="Например: У меня взорвались передние амортизаторы, а ещё они стучат, и машина не держит дорогу. Стуки начались со вчерашнего дня...">
+					<label htmlFor="problem">{props[7]}</label>
+					<TextArea id="problem" name="problem" required type='textarea' autoComplete="off" placeholder={props[8]} >
 					</TextArea>
 				</InputSection>
 				<div style={
@@ -59,7 +59,7 @@ const Form =()=>{
 						}>
 						<div>
 						<img src={substract} alt="" />
-						<span>Ваша заявка была успешна отправлена! Ожидайте ответа.</span>
+						<span>{props[9]}</span>
 						</div>				
 						<img src={close} alt="" onClick={handleClick}
 						style={
@@ -72,7 +72,7 @@ const Form =()=>{
 					</SuccessSubmit>
 				</div>
 				<SubmitButton>
-				<FormButton children='Отправить'/>
+				<FormButton children={props[10]}/>
 				</SubmitButton>
 			</FormContainer>
 		</FormWrapper>

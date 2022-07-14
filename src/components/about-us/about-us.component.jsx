@@ -4,7 +4,7 @@ import Button from "../button/button.component";
 import externalLink from '../../assets/icons/icon-external-link-blue.svg'
 import smokeEffect from '../../assets/img/smoke-left-min.png';
 import { Link } from "react-scroll";
-const AboutUs =()=>{
+const AboutUs =({props})=>{
 	return(
 		<AboutUsWrapper>
 			<AboutUsContainer>
@@ -13,19 +13,19 @@ const AboutUs =()=>{
 				</AboutUsImg>
 				<AboutUsInfo>
 					<AboutUsText>
-						<h2 id="about-us">О компании</h2>
-						<p>«Amort.md» является профессиональным сервис центром, который предоставляет услуги по диагностике и ремонту амортизаторов от квалифицированных специалистов. Наши мастера проходили стажировку в авто центрах Италии (г. Милан)</p>
-						<h2 id="products">Услуги</h2>
-						<p>Предоставляем услуги по<span> диагностики и ремонту системы амортизации </span> автомобилей, работая с проф. итальянским оборудыванием.</p>
-						<h2>Что ремонтируем</h2>
-						<p>К востановлению подлежат практически все виды амортизаторов: гидравлические доводчики дверей, амортизаторы мотоциклов, квадроциклов, траков, внедорожников, легковых авто, с автоматической регулировкой клиренса, жёсткости и др. типы амортизаторов.</p>
+						<h2 id="about-us">{props[1]}</h2>
+						<p>{props[2]}</p>
+						<h2 id="products">{props[3]}</h2>
+						<p>{props[4]}<span> {props[4.1]} </span> {props[4.2]}</p>
+						<h2>{props[5]}</h2>
+						<p>{props[6]}</p>
 					</AboutUsText>
 					<AboutUsContacts>
 						<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
-							<Button children='Узнать стоимость'/>
+							<Button children={props[7]}/>
 						</Link>
 						<button className="purpleBtn">
-							<span>Посмотреть работы</span>
+							<span>{props[8]}</span>
 							<img src={externalLink} alt=""/>
 						</button>
 					</AboutUsContacts>

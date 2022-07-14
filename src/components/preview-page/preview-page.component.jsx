@@ -5,18 +5,20 @@ import smoke from '../../assets/img/smoke-min.png';
 import car from '../../assets/img/car-min.png';
 import trust from '../../assets/img/trust-min.png';
 import { Link } from "react-scroll";
-const PreviewPage =()=>{
+const PreviewPage =({props})=>{
+	// console.log('props', props)
+
 	return(
 		<PreviewPageWrapper id="home">
 		<PreviewPageContainer>
 			<PreviewPageInfo>
 				<InfoText>
-					<h1>Хватит ловить дорогу!<span>Почини аморты!</span></h1>
-					<span>Квалифицированные услуги по диагностике и ремонту амортизаторов</span>
+					<h1>{props[1]}<br/><span>{props[2]}</span></h1>
+					<span>{props[3]}</span>
 				</InfoText>
 				<InfoContacts>				
 					<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
-						<Button children='Узнать стоимость'/>
+						<Button children={props[4]}/>
 					</Link>
 					 
 					<Telephone>

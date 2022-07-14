@@ -29,13 +29,15 @@ export const NavigationLinksContainer = styled.div`
 export const NavigationLinks = styled.div`
 	
 ul{
+	width: 36.75rem;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	padding-inline-start: 1.40625rem;
+	font-weight:500 ;
 	display:flex ;
-		margin-block-start: 1em;
-    margin-block-end: 1em;
-    padding-inline-start: 1.40625rem;
-	 font-weight:500 ;
-	li{
-		margin-left:3.125rem ;
+	 justify-content:space-between ;
+	 li{
+		/* margin-left:3.125rem ; */
 		&:first-child{
 			margin-left: 0rem;
 			padding-top: 0.1rem;

@@ -5,7 +5,8 @@ import phone from '../../assets/icons/phone.svg'
 import telegram from '../../assets/icons/telegram.svg';
 import whatsap from '../../assets/icons/whatsapp.svg';
 import { Link } from 'react-scroll';
-const Navigation =()=>{
+const Navigation =({props})=>{
+	// console.log('props', props)
 	return(
 		<NavigationWrapper>
 			<NavigationContainer>
@@ -16,10 +17,10 @@ const Navigation =()=>{
 					<NavigationLinks>
 						<ul>
 							<li><Language/></li>
-							<li><Link to="why-us" spy={true} smooth={true} offset={-150} duration={500}>Почему мы?</Link></li>
-							<li><Link to="about-us" spy={true} smooth={true} offset={-150} duration={500}>О компании</Link></li>
-							<li><Link to="products" spy={true} smooth={true} offset={-150} duration={500}>Услуги</Link></li>
-							<li><Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>Контакты</Link></li>
+							<li><Link to="why-us" spy={true} smooth={true} offset={-150} duration={500}>{props[1]}</Link></li>
+							<li><Link to="about-us" spy={true} smooth={true} offset={-150} duration={500}>{props[2]}</Link></li>
+							<li><Link to="products" spy={true} smooth={true} offset={-150} duration={500}>{props[3]}</Link></li>
+							<li><Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>{props[4]}</Link></li>
 						</ul>
 					</NavigationLinks>
 					<NavigationContacts>
