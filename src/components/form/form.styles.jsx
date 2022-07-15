@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { BaseButton } from "../button/button.styles";
 export const FormWrapper = styled.div`
 width: 50%;
+@media screen and (max-width:1000px){
+	width: 100%;
+	}
 `
 export const FormContainer = styled.form`
 width: 100%;
@@ -9,9 +12,11 @@ width: 100%;
 		font-weight:500 ;
 		color:#F2F2F2 ;
 		font-size:1.5rem ;
-
 		margin-block-start: 0rem;
-    margin-block-end: 0rem;
+		margin-block-end: 0rem;
+@media screen and (max-width:1000px){
+		font-size:1.3rem ;
+	}
 	}
 	/* .change{
 		height:2.625rem ;
@@ -25,8 +30,15 @@ export const PersonalInformation = styled.div`
 	display:flex ;
 	justify-content:space-between ;
 	gap:2.5rem ;
+	@media screen and (max-width:1000px){
+		flex-direction:column ;
+		gap: 0;
+	}
 	.jumi{
 		width:50% ;
+	@media screen and (max-width:1000px){
+		width: 100%;
+	}
 	}
 	`
 export const FormInput = styled.input`
@@ -78,8 +90,7 @@ width: 100%;
 padding:0.75rem ;
 display:flex ;
 align-items:center ;
-	box-sizing:border-box ;
-
+box-sizing:border-box ;
 justify-content:space-between ;
 div{
 	display:flex ;
@@ -134,6 +145,9 @@ border-radius: 0.75rem;
 transition:all 0.3s ease ;
 background: linear-gradient(96.18deg, #1756CF 1.56%, #174BCF 86.86%);
 box-shadow: 0px 0.5625rem 0.875rem rgba(20, 52, 167, 0.25);
+	@media screen and (max-width:1000px){
+		width: 100%;
+	}
 `
 
 export const SubmitButton = styled.div`

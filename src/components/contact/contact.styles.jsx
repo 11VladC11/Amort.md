@@ -7,6 +7,12 @@ position:relative ;
 width:50% ;
 height:auto ;
 z-index:5 ;
+	@media screen and (max-width:1000px){
+	width: 100%;
+	padding-left:0rem;
+	padding-top:3rem ;
+
+	}
 ul{
 	margin-block-start: 2.4rem;
 	margin-block-end: 0em;
@@ -36,7 +42,11 @@ h2{
 		border-radius:333rem ;
 		background: linear-gradient(180deg, #CFA717 0%, #CF1717 26.56%, #3C17CF 68.23%, #1761CF 100%);
 		filter: blur(10.375rem);
+		@media screen and (max-width:1000px){
+			width: 100%;
+		filter: blur(6.375rem);
 
+		}
 	}
 `
 export const Contacts = styled.div`

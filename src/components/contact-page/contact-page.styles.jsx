@@ -5,7 +5,10 @@ export const ContactPageWrapper = styled.div`
 	height: 50rem;
 	background-color:#0A172B ;
 	@media screen and (max-width:1000px){
-display	: none;
+/* display	: none; */
+height: 100%;
+	padding:1.714285rem;
+	box-sizing:border-box;
 }
 `
 export const ContactPageContainer = styled.div`
@@ -14,11 +17,12 @@ export const ContactPageContainer = styled.div`
 	margin:0 auto ;
 	display:flex ;
 	padding-top:5.75rem ;
-box-sizing:border-box ;
+	box-sizing:border-box ;
 	@media screen and (max-width:1000px){
 		flex-direction:column ;
-		width: 100% ;
-		margin:0 ;
+		width	:20.428571rem ;
+		margin:0 auto ;
+		padding-top:1rem ;
 	}
 
 `
