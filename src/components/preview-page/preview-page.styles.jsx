@@ -2,6 +2,8 @@ import styled from "styled-components";
 export const PreviewPageWrapper = styled.div`
 position:relative ;
 	@media screen and (max-width:1000px){
+		/* display:none; */
+		padding:1.714285rem;
 		margin-top:10.714285rem ;
 	}
 `
@@ -17,7 +19,8 @@ export const PreviewPageContainer = styled.div`
 		width: 100% ;
 		margin:0;
 		height:auto ; 
-
+		width	:20.428571rem ;
+	margin:0 auto ;
 
 	}
 `
