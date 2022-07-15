@@ -15,7 +15,8 @@ width: 100%;
 		margin-block-start: 0rem;
 		margin-block-end: 0rem;
 @media screen and (max-width:1000px){
-		font-size:1.3rem ;
+		font-size:1.35rem ;
+		text-align:center ;
 	}
 	}
 	/* .change{
