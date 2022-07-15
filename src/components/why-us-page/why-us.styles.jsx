@@ -6,6 +6,7 @@ background: #DBDCFA;
 color:#091427 ;
 padding-top:5.625rem ;
 @media screen and (max-width:1000px){
+	/* display:none ; */
 	padding:1.714285rem;
 	box-sizing:border-box;
 	padding-bottom: 3.285714rem;

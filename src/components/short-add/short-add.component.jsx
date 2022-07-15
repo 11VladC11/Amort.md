@@ -23,10 +23,13 @@ const ShortAdd =({props})=>{
 					</TelephoneAdd>
 					</AddContacts>
 				</AddContainer>
-				<BackgroundImage>
+				<BackgroundImage className="pc">
 					<img src={carDoctor} alt="" />
 				</BackgroundImage>
 			</ShortAddContainer>
+			<BackgroundImage className="mob">
+					<img src={carDoctor} alt="" />
+				</BackgroundImage>
 		</ShortAddWrapper>
 	)
 }
