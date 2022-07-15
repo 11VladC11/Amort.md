@@ -6,7 +6,7 @@ import mapLocation from '../../assets/img/map-location-min.png'
 import attention from '../../assets/icons/atention.svg'
 const Contact = ({props})=>{
 	return(
-		<ContactContainer>
+		<ContactContainer id="contacts">
 			<h2>{props[1]}</h2>
 			<Contacts>
 			<ul>

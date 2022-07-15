@@ -1,5 +1,6 @@
 import AboutUs from "./components/about-us/about-us.component";
 import ContactPage from "./components/contact-page/contact-page.component";
+import MobileNavigation from "./components/mobile-navigation/mobile-navigation.component";
 import Navigation from "./components/navigation/navigation.component";
 import PreviewPage from "./components/preview-page/preview-page.component";
 import ShortAdd from "./components/short-add/short-add.component";
@@ -13,6 +14,7 @@ function AllComponentsWrapper({props}) {
 	// console.log('previewPage', previewPage)
 	return (
     <div className="App">
+		<MobileNavigation props={navigation}/>
 		<Navigation props={navigation}/>
 		<PreviewPage props={previewPage}/>
 		<WhyUs props={whyUs}/>

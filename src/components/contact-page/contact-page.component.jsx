@@ -8,7 +8,7 @@ const ContactPage =({props})=>{
 	const {form, contacts} = props;
 	return(
 		<ContactPageWrapper>
-			<ContactPageContainer id="contacts">
+			<ContactPageContainer>
 				<Form props={form}/>
 				<Contact props={contacts}/>
 			</ContactPageContainer>

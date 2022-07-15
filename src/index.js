@@ -4,12 +4,15 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { LanguageProvider } from './contexts/language.context';
+import { CartProvider } from './contexts/cart.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 	<LanguageProvider>
-		<App />
+		<CartProvider>
+			<App />
+		</CartProvider>
 	</LanguageProvider>
   </React.StrictMode>
 );
