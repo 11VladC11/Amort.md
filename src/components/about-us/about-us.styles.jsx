@@ -7,7 +7,10 @@ position:relative ;
 	background: #E5EFFE;
 	color: #091427;
 	@media screen and (max-width:1000px){
-display	: none;
+/* display	: none; */
+	height: 100%;
+	padding:1.714285rem;
+	box-sizing:border-box;
 }
 `
 
@@ -19,27 +22,38 @@ height: 100%;
 	display:flex ;
 	align-items: center;
 	@media screen and (max-width:1000px){
-		flex-direction:column ;
-		width: 100% ;
-		margin:0;
-		height:auto ; 
+		flex-direction:column-reverse ;
+		width	:20.428571rem ;
+		margin:0 auto ;
 	}
 `
 
 export const AboutUsImg = styled.div`
+	@media screen and (max-width:1000px){
+		margin-top:2rem ;
+	}
 	img{
 		width: 38rem;
+	@media screen and (max-width:1000px){
+		width: 100%;
+	}
 	}
 `
 
 export const AboutUsInfo = styled.div`
 margin-left:1.5rem ;
+	@media screen and (max-width:1000px){
+		margin-left:0 ;
+	}
 `
 
 export const AboutUsText = styled.div`
 	h2{
 		font-size:1.5rem ;
 		font-weight:500 ;
+	@media screen and (max-width:1000px){
+		font-size:1.428571rem ;
+	}
 	}
 	p{
 		font-size:1rem ;
@@ -89,6 +103,9 @@ export const SmokeEffect = styled.div`
 	left:0 ;
 	img{
 		width: 22.5rem;
+	@media screen and (max-width:1000px){
+		width: 8.571428rem;
+	}
 		
 	}
 `
