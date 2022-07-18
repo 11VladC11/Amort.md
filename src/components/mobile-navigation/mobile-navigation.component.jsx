@@ -16,7 +16,7 @@ const MobileNavigation =({props})=>{
 			<MobileNavigationContainer>
 				<BurgerMenuWrapper onClick={()=> setIsCartOpen(!isCartOpen)}>
 					<BurgerMenuContainer className={isCartOpen && 'active'}>
-						<button type="button" class="nav-toggler">
+						<button type="button" className="nav-toggler">
 							<span></span>
 						</button>
 					</BurgerMenuContainer>
