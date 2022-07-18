@@ -9,7 +9,6 @@ import { Phone, SocialLinks } from "../navigation/navigation.styles";
 import phone from '../../assets/icons/phone.svg'
 import telegram from '../../assets/icons/telegram.svg';
 import whatsap from '../../assets/icons/whatsapp.svg';
-import close from '../../assets/icons/close.svg'
 const MobileNavigation =({props})=>{
 	const {isCartOpen, setIsCartOpen} = useContext(CartContext);
 	return(
