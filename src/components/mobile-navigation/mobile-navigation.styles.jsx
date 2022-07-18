@@ -49,7 +49,7 @@ export const BurgerMenuWrapper = styled.div`
 width: 3rem;
 	height: 3rem;
 	position: relative;
-	z-index:1001 ;
+	/* z-index:1001 ; */
 `
 
 export const BurgerMenuContainer = styled.div`
@@ -59,9 +59,9 @@ top:50% ;
 transform:translate(-50%, -50%) ;
 display:flex ;
 flex-direction:column ;
-gap:0.645rem ;
-width: 1.714285rem;
-height: 1.714285rem;
+gap:0.3571428rem ;
+width: 1.857142rem;
+height: 1.142857rem;
 
 	.line{
 		display:block ;
@@ -69,36 +69,19 @@ height: 1.714285rem;
 		height: 0.142857rem ;
 		width: 100%;
 		transition:all 0.3s ease ;
-
+		border-radius:1rem ;
 	}
 	.line1{
-		width:1rem ;
+		width:1.142857rem ;
+		justify-self:top ;
 		align-self:flex-start ;
 
 	}
 	.line3{
-		width:1rem ;
+		width:1.142857rem ;
 		align-self:flex-end ;
 	}
-	&.active{
-		.line{
-			scale:1.2 ;
-		}
-		.line1{
-			transform: rotate(42deg);
-			transform-origin: top left;
-
-		}
-		.line2{
-			transform: rotate(-42deg);
-			transform-origin: center;
-			
-		}
-		.line3{
-			transform: rotate(42deg);
-			transform-origin: bottom right;
-		}
-	}
+	
 `
 
 export const LogoContainer = styled.div`
@@ -112,6 +95,14 @@ width:100% ;
 height: 100%;
 z-index:1000 ;
 background-color:black ;
+.close{
+	position:absolute ;
+	top:1rem ;
+	left:1.5rem ;
+	img{
+		width: 3rem;
+	}
+}
 
 .background{
 	position:absolute ;

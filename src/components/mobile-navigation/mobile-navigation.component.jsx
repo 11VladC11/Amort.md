@@ -9,7 +9,7 @@ import { Phone, SocialLinks } from "../navigation/navigation.styles";
 import phone from '../../assets/icons/phone.svg'
 import telegram from '../../assets/icons/telegram.svg';
 import whatsap from '../../assets/icons/whatsapp.svg';
-
+import close from '../../assets/icons/close.svg'
 const MobileNavigation =({props})=>{
 	const {isCartOpen, setIsCartOpen} = useContext(CartContext);
 	return(
@@ -33,6 +33,7 @@ const MobileNavigation =({props})=>{
 				{
 					isCartOpen &&
 				<BurgerItemsWrapper>
+					<div className="close" onClick={()=> setIsCartOpen(!isCartOpen)}><img src={close} alt="" /></div>
 					<BurgerItemsContainer>
 						<li><Link to="why-us" spy={true} smooth={true} offset={-150} duration={500} onClick={()=> setIsCartOpen(!isCartOpen)}>{props[1]}</Link></li>
 						<li><Link to="about-us" spy={true} smooth={true} offset={-150} duration={500} onClick={()=> setIsCartOpen(!isCartOpen)}>{props[2]}</Link></li>
