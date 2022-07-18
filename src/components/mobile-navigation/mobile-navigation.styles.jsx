@@ -49,7 +49,7 @@ export const BurgerMenuWrapper = styled.div`
 width: 3rem;
 	height: 3rem;
 	position: relative;
-	/* z-index:1001 ; */
+	z-index:1001 ;
 `
 
 export const BurgerMenuContainer = styled.div`
@@ -57,7 +57,7 @@ position:absolute ;
 left:50% ;
 top:50% ;
 transform:translate(-50%, -50%) ;
-display:flex ;
+/* display:flex ;
 flex-direction:column ;
 gap:0.3571428rem ;
 width: 1.857142rem;
@@ -80,8 +80,64 @@ height: 1.142857rem;
 	.line3{
 		width:1.142857rem ;
 		align-self:flex-end ;
+	} */
+		.nav-toggler{
+		/* z-index: 1; */
+		width: 3.125rem;
+		height: 3.125rem;
+		border: none;
+		cursor: pointer;
+		border-radius: 50%;
+		background-color: transparent;
+		border: 1px solid transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition:  opacity 0.5s ease-in-out;
+		
+		span{
+			height: 0.142857rem ;
+			width: 1.5rem;
+			border-radius:1rem ;
+			background-color: white;
+			position: relative;
+			transition: background-color 0.3s ease;
+			&::before,&::after{
+				content: '';
+				border-radius:1rem ;
+				position: absolute;
+				top: 0;
+				width: 50%;
+				height: 100%;
+				background-color: white;
+				transition: all 0.3s ease;
+			}
+			&::before{
+				left: 0;
+				transform: translateY(-0.5rem);
+			}
+			&::after{
+				right: 0;
+				transform: translateY(0.5rem);
+			}
+		}
 	}
-	
+	&.active {
+			.nav-toggler{
+				span{
+				background-color: transparent;
+				&::before{
+					transform: rotate(45deg);
+					width: 100%;
+				}
+				&::after{
+					transform: rotate(-45deg);
+					width: 100%;
+
+				}
+				}
+			}
+		}
 `
 
 export const LogoContainer = styled.div`

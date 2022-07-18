@@ -17,9 +17,9 @@ const MobileNavigation =({props})=>{
 			<MobileNavigationContainer>
 				<BurgerMenuWrapper onClick={()=> setIsCartOpen(!isCartOpen)}>
 					<BurgerMenuContainer className={isCartOpen && 'active'}>
-						<span className="line line1"></span>
-						<span className="line line2"></span>
-						<span className="line line3"></span>
+						<button type="button" class="nav-toggler">
+							<span></span>
+						</button>
 					</BurgerMenuContainer>
 				</BurgerMenuWrapper>
 
@@ -33,7 +33,6 @@ const MobileNavigation =({props})=>{
 				{
 					isCartOpen &&
 				<BurgerItemsWrapper>
-					<div className="close" onClick={()=> setIsCartOpen(!isCartOpen)}><img src={close} alt="" /></div>
 					<BurgerItemsContainer>
 						<li><Link to="why-us" spy={true} smooth={true} offset={-150} duration={500} onClick={()=> setIsCartOpen(!isCartOpen)}>{props[1]}</Link></li>
 						<li><Link to="about-us" spy={true} smooth={true} offset={-150} duration={500} onClick={()=> setIsCartOpen(!isCartOpen)}>{props[2]}</Link></li>
