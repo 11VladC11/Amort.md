@@ -17,7 +17,7 @@ function AllComponentsWrapper({props}) {
 	const {isCartOpen} = useContext(CartContext);
 
 	return (
-    <div className={isCartOpen ? "fixed" : "App"}>
+    <div className="App">
 		<MobileNavigation props={navigation}/>
 		<Navigation props={navigation}/>
 		<PreviewPage props={previewPage}/>
