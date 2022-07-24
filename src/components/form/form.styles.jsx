@@ -78,7 +78,16 @@ label{
 #problem{
 	height:9.5rem ;
 }
+.phoneInput{
+position: relative;
+.error{
+	font-size:0.8rem ;
+	position:absolute ;
+	bottom:-1.2rem ;
+	color:#D63535 ;
 
+}
+}
 
 `
 
@@ -88,6 +97,7 @@ margin:1rem 0 ;
 background: #2FA62D;
 border-radius: 0.75rem;
 width: 100%;
+font-size:0.875rem ;
 padding:0.75rem ;
 display:flex ;
 align-items:center ;
@@ -137,8 +147,8 @@ padding: 1.25rem 1.5rem;
 font-size:1rem ;
 color: #ffffff;
 font-weight:500 ;
-width: 11.9375rem;
-height: 3.1875rem;
+width: auto;
+height: auto;
 border:none ;
 outline:none ;
 cursor:pointer ;
@@ -153,4 +163,6 @@ box-shadow: 0px 0.5625rem 0.875rem rgba(20, 52, 167, 0.25);
 
 export const SubmitButton = styled.div`
 width: 100%;
+margin-top:1rem ;
+
 `

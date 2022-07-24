@@ -53,6 +53,7 @@ h1{
 span.intro{
 	display:block ;
 		width: 28.125rem;
+		line-height:1.4rem ;
 		@media screen and (max-width:1000px){
 			width: 80% ;
 			margin:0 auto ;

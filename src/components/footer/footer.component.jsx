@@ -4,8 +4,9 @@ const Footer = ()=> {
 	return(
 		<FooterWrapper>
 			<FooterContainer>
-				<h6>Developed by <a href="https://cojocaruvlad.netlify.app" rel="noreferrer" target='_blank'>Cojocaru Vlad</a>, designed by  </h6>
+				Сайт разработан при поддержке  <a href="mailto:awsteammd@gmail.com">  «Awesome Team»</a>
 			</FooterContainer>
+
 		</FooterWrapper>
 	)
 }

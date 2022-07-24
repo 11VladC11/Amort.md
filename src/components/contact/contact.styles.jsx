@@ -21,7 +21,7 @@ ul{
 			display:flex ;
 			align-items:center ;
 			gap:0.65rem;
-			margin-bottom:1.1875rem ;
+			margin-bottom:1.2875rem ;
 			font-size:1rem ;
 			img{
 				width: 1rem;
@@ -59,12 +59,13 @@ export const GoogleMaps = styled.div`
 `
 
 export const Attention = styled.div`
-margin-top:1rem ;
+	margin-top:1rem ;
 	display:flex ;
 	align-items:flex-start ;
 	gap:0.5625rem ;
 	background: #E8864D;
-border-radius: 0.75rem;
-font-size:0.875rem ;
-padding:0.6875rem 1.125rem ;
+	border-radius: 0.75rem;
+	font-size:0.875rem ;
+	padding:0.6875rem 1.125rem ;
+	line-height:1.225rem ;
 `

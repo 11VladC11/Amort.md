@@ -1,15 +1,19 @@
+import { useContext } from "react";
 import { AboutUsContacts, AboutUsContainer, AboutUsImg, AboutUsInfo, AboutUsText, AboutUsWrapper, SmokeEffect } from "./about-us.styles";
 import amortizatoareLogo from '../../assets/img/amor-min.png';
+import amortizatoareLogoRo from '../../assets/img/amor-min-ro.png';
 import Button from "../button/button.component";
 import externalLink from '../../assets/icons/icon-external-link-blue.svg'
 import smokeEffect from '../../assets/img/smoke-left-min.png';
 import { Link } from "react-scroll";
+import { LanguageContext } from "../../contexts/language.context";
 const AboutUs =({props})=>{
+	const {romanianLanguage} = useContext(LanguageContext)
 	return(
 		<AboutUsWrapper>
 			<AboutUsContainer>
 				<AboutUsImg>
-					<img src={amortizatoareLogo} alt="" />
+					<img src={romanianLanguage ? amortizatoareLogoRo : amortizatoareLogo} alt="" />
 				</AboutUsImg>
 				<AboutUsInfo>
 					<AboutUsText>

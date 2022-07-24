@@ -9,7 +9,10 @@ height: 13.25rem;
 .mob{
 	display:none ;
 }
-background: linear-gradient(89.56deg, rgba(107, 92, 209, 0) 75.92%, #8171E3 82.66%), linear-gradient(89.56deg, #8171E3 41.21%, rgba(107, 92, 209, 0) 62.58%), url(car-doctor-with-stethoscope-car-showroom.jpg), linear-gradient(90.26deg, rgba(129, 113, 227, 0.7) 0%, rgba(107, 92, 209, 0.7) 100%);
+background: linear-gradient(89.56deg, rgba(107, 92, 209, 0) 75.92%, #8171E3 82.66%), 
+				linear-gradient(89.56deg, #8171E3 41.21%, rgba(107, 92, 209, 0) 62.58%), url(car-doctor-with-stethoscope-car-showroom.jpg), 
+				linear-gradient(90.26deg, rgba(129, 113, 227, 0.1) 0%, rgba(107, 92, 209, 0.1) 100%);
+
 @media screen and (max-width:1000px){
 	position: relative;
 	/* display:none ; */
@@ -43,7 +46,7 @@ background: linear-gradient(89.56deg, rgba(107, 92, 209, 0) 75.92%, #8171E3 82.6
 .pc{
 	display:none;
 }
-background: linear-gradient(90.26deg, rgba(129, 113, 227, 0.7) 0%, rgba(107, 92, 209, 0.7) 100%), url(car-doctor-with-stethoscope-car-showroom.jpg);
+background: linear-gradient(90.26deg, rgba(129, 113, 227, 0.6) 0%, rgba(107, 92, 209, 0.6) 100%);
 	box-sizing:border-box;
 		height:17rem;
 
@@ -76,9 +79,9 @@ export const AddContainer = styled.div`
 	`
 
 export const AddInfo = styled.div`
-padding-top	:2.1875rem ;
+padding-top	:1.1875rem ;
 	@media screen and (max-width:1000px){
-		padding-top:1rem ;
+		padding-top:0rem ;
 	}
 	
 h2{
@@ -87,7 +90,7 @@ h2{
     margin-block-end: 0em;
 	 font-weight:500 ;
 	 color:#F8F8F8 ;
-	 margin-bottom:1rem ;
+	 margin-bottom:0.8rem ;
 	@media screen and (max-width:1000px){
 		font-size:1.428571rem ;
 	}
@@ -100,6 +103,8 @@ span{
 	font-weight:400 ;
 	color: #E9E9E9;
 	font-size:1rem ;
+	line-height:1.4rem ;
+
 }
 `
 

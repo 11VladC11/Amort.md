@@ -6,9 +6,9 @@ import discount from '../../assets/icons/discount-icon.svg';
 import externalLink from '../../assets//icons/icon-external-link.svg'; 
 
 import logo from '../../assets/img/logo-min.jpg'
-import firstReview from '../../assets/img/first-review-min.jpg'
-import secondReview from '../../assets/img/second-review-min.jpg'
-import thirdReview from '../../assets/img/third-review-min.jpg'
+import firstReview from '../../assets/img/first-review-min.png'
+import secondReview from '../../assets/img/second-review-min.png'
+import thirdReview from '../../assets/img/third-review-min.png'
 import amortizatoare from '../../assets/img/amortizatore-min.png'
 import Button from "../button/button.component";
 import { Link } from "react-scroll";

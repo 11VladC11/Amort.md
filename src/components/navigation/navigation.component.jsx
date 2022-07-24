@@ -1,18 +1,21 @@
 import {LogoImg, NavigationContainer, NavigationWrapper,NavigationLinks,NavigationContacts , NavigationLinksContainer, Phone, SocialLinks} from './navigation.styles'
-import MainLogo  from '../../assets/logo/big-logo-min.jpg'
+import MainLogoRu  from '../../assets/logo/logo-ru-min.png';
+import MainLogoRo  from '../../assets/logo/logo-ro-min.png';
 import Language from '../language/language.component';
 import phone from '../../assets/icons/phone.svg'
 import telegram from '../../assets/icons/telegram.svg';
 import whatsap from '../../assets/icons/whatsapp.svg';
 import { Link } from 'react-scroll';
+import { useContext } from 'react';
+import {LanguageContext} from '../../contexts/language.context'
 const Navigation =({props})=>{
 	// console.log('props', props)
+	const {romanianLanguage} = useContext(LanguageContext);
 	return(
 		<NavigationWrapper>
 			<NavigationContainer>
 				<Link className='logoContainer' to="home" spy={true} smooth={true} offset={0} duration={500}>
-					<LogoImg src={MainLogo} alt='main-logo' />
-					<span className='logoAbsoluteText'>{props[0]}</span>
+					<LogoImg src={romanianLanguage ? MainLogoRo : MainLogoRu} alt='main-logo' />
 				</Link>
 				<NavigationLinksContainer>
 					<NavigationLinks>

@@ -2,14 +2,17 @@ import { useContext } from "react";
 import Language from "../language/language.component";
 import { BurgerMenuContainer,  BurgerMenuWrapper ,BurgerItemsWrapper, MobileNavigationContainer, MobileNavigationWrapper, BurgerItemsContainer, } from "./mobile-navigation.styles";
 import { Link } from "react-scroll";
-import MainLogo  from '../../assets/logo/big-logo-min.jpg'
+import MainLogoRu  from '../../assets/logo/big-logo-min.png';
+import MainLogoRo  from '../../assets/logo/logo-ro-min.png';
 import { LogoImg } from "../navigation/navigation.styles";
 import { CartContext } from "../../contexts/cart.context";
 import { Phone, SocialLinks } from "../navigation/navigation.styles";
 import phone from '../../assets/icons/phone.svg'
 import telegram from '../../assets/icons/telegram.svg';
 import whatsap from '../../assets/icons/whatsapp.svg';
+import { LanguageContext } from "../../contexts/language.context";
 const MobileNavigation =({props})=>{
+	const {romanianLanguage} = useContext(LanguageContext)
 	const {isCartOpen, setIsCartOpen} = useContext(CartContext);
 	return(
 		<MobileNavigationWrapper>
@@ -24,8 +27,7 @@ const MobileNavigation =({props})=>{
 
 				
 				<Link className='logoContainer logo' to="home" spy={true} smooth={true} offset={-150} duration={500}>
-					<LogoImg src={MainLogo} alt='main-logo' />
-					<span className='logoAbsoluteText'>{props[0]}</span>
+					<LogoImg src={romanianLanguage ? MainLogoRo : MainLogoRu} alt='main-logo' />
 				</Link>
 				<Language/>
 

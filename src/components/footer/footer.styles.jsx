@@ -22,23 +22,26 @@ justify-content:center ;
 		width: 77rem ;
 		margin:0 auto ;
 	}
-h6{
+color:#BDBDBD ;
 	font-size:0.6rem  ;
 	font-weight:500 ;
 	@media screen and (min-width:1000px){
-	font-size:1rem ;
+	font-size:0.875rem ;
 	}
 	a{
+		margin-left:0.2rem ;
 		color: white;
-		text-decoration:underline ;
-		opacity:0.8 ;
+		text-decoration:none ;
+		opacity:1 ;
 		transition:all 0.3s ease ;
 		&:hover{
 			opacity:0.5 ;
 			text-decoration:none ;
 		}
 	}
-}
+
 `
+
+
 
 

@@ -1,13 +1,16 @@
+import { useContext } from "react";
 import Button from "../button/button.component";
 import { Car, IllustrationMinus, InfoContacts, InfoText, PreviewPageContainer, PreviewPageIllustration, PreviewPageInfo, PreviewPageWrapper, Smoke , Telephone, Trust} from "./preview-page.styles";
 import telefon from '../../assets/icons/phone.svg';
 import smoke from '../../assets/img/smoke-min.png';
 import car from '../../assets/img/car-min.png';
-import trust from '../../assets/img/trust-min.png';
+import trustRu from '../../assets/img/trust-min.png';
+import trustRo from '../../assets/img/trust-min-ro.png';
 import { Link } from "react-scroll";
+import { LanguageContext } from "../../contexts/language.context";
 const PreviewPage =({props})=>{
 	// console.log('props', props)
-
+	const {romanianLanguage} = useContext(LanguageContext)
 	return(
 		<PreviewPageWrapper id="home">
 		<PreviewPageContainer>
@@ -38,7 +41,7 @@ const PreviewPage =({props})=>{
 				</Car>
 				<Link to="why-us" spy={true} smooth={true} offset={-150} duration={500}>
 					<Trust>
-						<img src={trust} alt="" />
+						<img src={romanianLanguage ? trustRo : trustRu} alt="" />
 					</Trust>
 				</Link>
 			</IllustrationMinus>
