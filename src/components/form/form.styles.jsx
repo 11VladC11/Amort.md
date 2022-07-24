@@ -40,8 +40,9 @@ export const PersonalInformation = styled.div`
 	@media screen and (max-width:1000px){
 		width: 100%;
 	}
-	}
-	`
+}
+
+`
 export const FormInput = styled.input`
 	padding: 1rem 0.625rem 1rem 1rem;
 	background: #061124;

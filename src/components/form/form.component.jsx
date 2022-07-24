@@ -39,7 +39,7 @@ const Form =({props})=>{
 							<label htmlFor="phone">{props[2]}</label>
 							<FormInput id='phone' name="phone" type='number' value={phone} style={
 								{
-									border: error ? '1px solid #D63535' : '1px solid transparent',
+									border: error ? '1px solid #D63535' : '',
 
 								}
 								} onChange={(e) => {
