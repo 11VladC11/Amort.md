@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Language from "../language/language.component";
 import { BurgerMenuContainer,  BurgerMenuWrapper ,BurgerItemsWrapper, MobileNavigationContainer, MobileNavigationWrapper, BurgerItemsContainer, } from "./mobile-navigation.styles";
 import { Link } from "react-scroll";
-import MainLogoRu  from '../../assets/logo/big-logo-min.png';
+import MainLogoRu  from '../../assets/logo/logo-ru-min.png';
 import MainLogoRo  from '../../assets/logo/logo-ro-min.png';
 import { LogoImg } from "../navigation/navigation.styles";
 import { CartContext } from "../../contexts/cart.context";
