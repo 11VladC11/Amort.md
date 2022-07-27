@@ -25,7 +25,7 @@ const AboutUs =({props})=>{
 						<p>{props[6]}</p>
 					</AboutUsText>
 					<AboutUsContacts>
-						<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
+						<Link to="form" spy={true} smooth={true} offset={0} duration={500}>
 							<Button children={props[7]}/>
 						</Link>
 						<a rel="noreferrer" target='_blank' href="https://docs.google.com/document/d/1YJpYhOyVK7dvbNsJK8R1sQcQOcPYZSyBv4UecnTto-k/edit">

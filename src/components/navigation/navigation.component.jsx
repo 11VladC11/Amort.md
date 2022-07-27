@@ -36,7 +36,7 @@ const Navigation =({props})=>{
 						</Phone>
 						<SocialLinks>
 							<a href="https://telegram.me/amortmd" className='telega'><span><img src={telegram} alt="" /></span></a>
-							<a href="https://wa.me/067309001" ><span className='whatsap'><img src={whatsap} alt="" /></span></a>
+							<a href="https://wa.me/+37367309001" ><span className='whatsap'><img src={whatsap} alt="" /></span></a>
 						</SocialLinks>
 					</NavigationContacts>
 				</NavigationLinksContainer>

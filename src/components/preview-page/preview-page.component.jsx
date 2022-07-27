@@ -20,7 +20,7 @@ const PreviewPage =({props})=>{
 					<span className="intro">{props[3]}</span>
 				</InfoText>
 				<InfoContacts>				
-					<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
+					<Link to="form" spy={true} smooth={true} offset={0} duration={500}>
 						<Button children={props[4]}/>
 					</Link>
 					 

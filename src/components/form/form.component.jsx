@@ -16,7 +16,7 @@ const Form =({props})=>{
 			setError(true);
 			return;
 		}
-   	 emailjs.sendForm('service_f7hkc0k', 'template_9p2okdf', e.target, '5S_E5yM1kAqzL27Ml')
+   	 emailjs.sendForm('service_8qdwg1m', 'template_ba8meuj', e.target, '1-yW78huaOPCuWdiz')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -30,7 +30,7 @@ const Form =({props})=>{
 	}
 
 	return(
-		<FormWrapper>
+		<FormWrapper id="form">
 			<FormContainer onSubmit={sendEmail}>
 				<h2>{props[1]}</h2>
 				<PersonalInformation>

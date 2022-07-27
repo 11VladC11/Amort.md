@@ -47,7 +47,7 @@ return(
 						<span className="text">{props[5]}</span>
 					</li>
 					<li>
-						<Link to="contacts" spy={true} smooth={true} offset={0} duration={500}>
+						<Link to="form" spy={true} smooth={true} offset={0} duration={500}>
 							<Button children={props[6]}/>
 						</Link>
 					</li>
