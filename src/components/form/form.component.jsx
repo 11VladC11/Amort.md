@@ -48,7 +48,7 @@ const Form =({props})=>{
 								} placeholder="068 584 828" autoComplete="off"/>
 							{
 								error ? (
-									<div className="error">* Это поле обязательно для заполнения</div>
+									<div className="error">{props[11]}</div>
 									):('')
 							}
 						</div>

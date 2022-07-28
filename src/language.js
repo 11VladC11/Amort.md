@@ -53,6 +53,7 @@ export const languageChangerObject ={
 				8:'Например: У меня взорвались передние амортизаторы, а ещё они стучат, и машина не держит дорогу. Стуки начались со вчерашнего дня...',
 				9:'Ваша заявка была успешна отправлена! Ожидайте ответа.',
 				10:'Отправить',
+				11:'* Это поле обязательно для заполнения',
 			},
 			'contacts':{
 				1:'Контакты',
@@ -115,6 +116,7 @@ export const languageChangerObject ={
 				8:'De exemplu: amortizoarele mele din față au explodat, de asemenea ele fac zgomot, iar mașina nu ține drumul. Zgomotele au început ieri...',
 				9:'Cererea ta a fost trimisă cu succes! Așteptați un răspuns',
 				10:'Trimite',
+				11:'* Este necesar să completați acest câmp'
 			},
 			'contacts':{
 				1:'Contacte',
