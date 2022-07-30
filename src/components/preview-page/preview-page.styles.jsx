@@ -4,7 +4,7 @@ position:relative ;
 	@media screen and (max-width:1000px){
 		/* display:none; */
 		padding:1.714285rem;
-		margin-top:10.714285rem ;
+		margin-top:6.714285rem ;
 	}
 `
 export const PreviewPageContainer = styled.div`
