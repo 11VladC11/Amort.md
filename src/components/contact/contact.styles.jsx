@@ -53,8 +53,28 @@ export const Contacts = styled.div`
 
 `
 export const GoogleMaps = styled.div`
+position:relative ;
 	img{
 		width: 100%;
+		border-radius: 1.5rem;
+	}
+	.street{
+		background-color:#14111F ;
+		position:absolute ;
+		left:0 ;
+		bottom:0 ;
+		width: 18.75rem;
+		padding:0.6rem 0 0.6rem 0 ;
+		text-align:center;
+		border-bottom-left-radius:1.5rem ;
+		border-top-right-radius:0.75rem ;
+		@media screen and (max-width:1000px){
+			width: 100%;
+		border-top-right-radius:0rem ;
+		border-bottom-right-radius:1.5rem ;
+
+		}
+
 	}
 `
 

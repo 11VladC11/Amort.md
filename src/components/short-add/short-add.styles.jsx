@@ -56,7 +56,10 @@ background: linear-gradient(90.26deg, rgba(129, 113, 227, 0.6) 0%, rgba(107, 92,
 export const ShortAddContainer = styled.div`
 position: relative;
 	width: 77rem ;
+	height: 100%;
 	margin:0 auto ;
+	display:flex ;
+	align-items:center ;
 	@media screen and (max-width:1000px){
 		box-sizing:border-box ;
 		flex-direction:column ;
@@ -69,7 +72,7 @@ position: relative;
 
 export const AddContainer = styled.div`
 	margin-left:9.75rem ;
-	width: 31.75rem;
+	width: 32.75rem;
 	@media screen and (max-width:1000px){
 		width: 100%;
 		box-sizing:border-box ;
@@ -79,7 +82,7 @@ export const AddContainer = styled.div`
 	`
 
 export const AddInfo = styled.div`
-padding-top	:1.1875rem ;
+/* padding-top	:2.1875rem ; */
 	@media screen and (max-width:1000px){
 		padding-top:0rem ;
 	}

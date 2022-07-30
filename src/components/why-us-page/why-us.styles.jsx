@@ -190,7 +190,6 @@ a{
 		outline:none ;
 		color:#ffffff ;
 		font-size:1rem ;
-		width: 15rem;
 		height: 2.6875rem;
 		cursor:pointer ;
 		font-family: 'Rubik', sans-serif;
@@ -199,8 +198,11 @@ a{
 		border-radius: 0.75rem;
 		@media screen and (max-width:1000px){
 			height: 3.285714rem;
+			width: 15rem;
+			text-align:center ;
 		}
 		img{
+			margin-left:0.3rem ;
 			width: 1.125rem;
 		}
 	}
