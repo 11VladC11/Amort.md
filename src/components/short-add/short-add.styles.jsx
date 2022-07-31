@@ -10,7 +10,7 @@ height: 13.25rem;
 	display:none ;
 }
 background: linear-gradient(89.56deg, rgba(107, 92, 209, 0) 75.92%, #8171E3 82.66%), 
-				linear-gradient(89.56deg, #8171E3 41.21%, rgba(107, 92, 209, 0) 62.58%), url(car-doctor-with-stethoscope-car-showroom.jpg), 
+				linear-gradient(89.56deg, #8171E3 41.21%, rgba(107, 92, 209, 0) 62.58%), 
 				linear-gradient(90.26deg, rgba(129, 113, 227, 0.1) 0%, rgba(107, 92, 209, 0.1) 100%);
 
 @media screen and (max-width:1000px){
