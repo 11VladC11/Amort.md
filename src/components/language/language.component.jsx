@@ -19,8 +19,8 @@ const Language = ()=>{
 		<Container>
 		<img src={languageSvg} alt="" />
 			<select name="language"  id="language" onChange={onChangeLanguageHandler}>
-				<option  value="russian" >Ru</option>
 				<option value="romanian" >Ro</option>
+				<option  value="russian" >Ru</option>
 			</select>
 		</Container>
 	)

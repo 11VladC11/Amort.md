@@ -1,10 +1,10 @@
 import { FooterContainer, FooterWrapper } from "./footer.styles";
 
-const Footer = ()=> {
+const Footer = ({props})=> {
 	return(
 		<FooterWrapper>
 			<FooterContainer>
-				Сайт разработан при поддержке  <a href="mailto:awsteammd@gmail.com">  «Awesome Team»</a>
+				{props[1]}<a href="mailto:awsteammd@gmail.com">  «Awesome Team»</a>
 			</FooterContainer>
 
 		</FooterWrapper>

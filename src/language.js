@@ -60,6 +60,9 @@ export const languageChangerObject ={
 				2:'г. Кишинёв, сек. Ботаника, ул. Мунчешть 255А',
 				3:'В стоимость ремонта амортизатора не входит замена пыльников/отбойников, подшипников, верхней опоры амортизатора или других его внешних комплектующих. Цену за них стоит уточнять отдельно.',
 			}
+		},
+		'footer':{
+			1:'Сайт разработан при поддержке'
 		}
 	},
 	'romanian':{
@@ -106,11 +109,11 @@ export const languageChangerObject ={
 		},
 		'contactsPage':{
 			'form':{
-				1:'Lăsați o cerere pentru o consultație gratuită',
-				2:'Numarul de telefon*',
-				3:'Numele',
+				1:'Completează formularul și primește o consultație gratuită',
+				2:'Telefon*',
+				3:'Nume',
 				4:'Vlad...',
-				5:'Specificați modelul mașinii dvs',
+				5:'Indică modelul automobilului',
 				6:'De exemplu: Ford Mustang 2018, cu tracțiune integrală',
 				7:'Spune-ne despre problema ta',
 				8:'De exemplu: amortizoarele mele din față au explodat, de asemenea ele fac zgomot, iar mașina nu ține drumul. Zgomotele au început ieri...',
@@ -123,6 +126,9 @@ export const languageChangerObject ={
 				2:'or.Chișinău, sec.Botanică, str.Munceti 255A',
 				3:'Costul reparației amortizorului nu include înlocuirea anterelor / barelor de protecție, a rulmenților, a suportului superior al amortizorului sau a altor componente externe ale acestuia. Prețul pentru ele trebuie specificat separat.',
 			}
+		},
+		'footer':{
+			1:'Site-ul a fost dezvoltat de către'
 		}
 	}
 }

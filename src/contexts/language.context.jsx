@@ -2,12 +2,12 @@ import {useState, createContext} from 'react';
 
 
 export const LanguageContext = createContext({
-	romanianLanguage:false,
+	romanianLanguage:true,
 	setRomanianLanguage:()=>{},
 })
 
 export const LanguageProvider = ({children})=>{
-	const [romanianLanguage, setRomanianLanguage] = useState(false);
+	const [romanianLanguage, setRomanianLanguage] = useState(true);
 	const value ={
 		romanianLanguage,
 		setRomanianLanguage,

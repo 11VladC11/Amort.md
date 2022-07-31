@@ -144,7 +144,8 @@ export const TextArea = styled.textarea`
 
 export const FormButton = styled(BaseButton)`
 margin:0 0 0 auto  ;
-padding: 1rem 1.5rem;
+	padding: 0.9rem 1.5rem 1rem;
+
 font-size:1rem ;
 color: #ffffff;
 font-weight:500 ;

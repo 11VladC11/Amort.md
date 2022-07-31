@@ -157,7 +157,7 @@ export const ButtonViolet = styled(BaseButton)`
 	width:auto ;
 	height:auto ;
 	font-size:1rem ;
-	padding: 1rem 1.5rem;
+	padding: 0.9rem 1.5rem 1rem;
 	font-weight:500 ;
 `
 

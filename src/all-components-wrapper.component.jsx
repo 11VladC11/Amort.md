@@ -10,7 +10,7 @@ import WhyUs from "./components/why-us-page/why-us.component";
 // import { useContext } from "react";
 // import { CartContext } from "./contexts/cart.context";
 function AllComponentsWrapper({props}) {
-	const { navigation, previewPage, whyUs, shortAdd, aboutUs, contactsPage } = props;
+	const { navigation, previewPage, whyUs, shortAdd, aboutUs, contactsPage, footer } = props;
 	// console.log('props', props)
 	// console.log('navigation', navigation)
 	// console.log('whyUs', whyUs)
@@ -26,7 +26,7 @@ function AllComponentsWrapper({props}) {
 		<ShortAdd props={shortAdd}/>
 		<AboutUs props={aboutUs}/>
 		<ContactPage props={contactsPage}/>
-		<Footer/>
+		<Footer props={footer}/>
     </div>
   );
 }
