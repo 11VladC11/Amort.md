@@ -62,7 +62,8 @@ export const languageChangerObject ={
 			}
 		},
 		'footer':{
-			1:'Сайт разработан при поддержке'
+			1:'Сайт разработан при поддержке',
+			2:'при поддержке'
 		}
 	},
 	'romanian':{
@@ -128,7 +129,8 @@ export const languageChangerObject ={
 			}
 		},
 		'footer':{
-			1:'Site-ul a fost dezvoltat de către'
+			1:'Site-ul a fost dezvoltat de către',
+			2:'cu suportul'
 		}
 	}
 }
